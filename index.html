@@ -2,42 +2,21 @@
 <head>
 	<meta charset="utf-8"/>
 	<link rel="stylesheet"href="./css/base.css"/>
-    
 </head>
-<title>saolei</title>
+<title>广告页</title>
 <body>
-	<div id="da">
-		<div id="kuang">
-			<div id="xiao">
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-				<div class="item"></div>
-                <div class="item"></div>
-			</div>
-		</div>
-			
+	<div id="advertising">
+		<input type="text" value="11112323" id="location">
+		<span class="copyWechat">关注</span>
 	</div>
 </body>
-<script src="./js/base.js"></script>
+<script src="./js/jquery.min.js"></script>
+<script>
+	$(function(){
+	    $(".copyWechat").click(function(){
+            document.getElementById("location").select();
+            document.execCommand('Copy', false, null);
+		})
+	})
+</script>
 </html>
